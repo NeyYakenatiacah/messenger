@@ -12,9 +12,10 @@ include(config.pri)
 INCLUDEPATH += $$PWD
 
 SOURCES += \
+    main.cpp
     
 
-HEADERS  += \
+HEADERS  +=
     
 
 
