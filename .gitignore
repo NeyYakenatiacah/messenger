@@ -1,0 +1,14 @@
+# Ignore current sub-dir config.pri files
+# **/config.pri
+
+# Ignore current sub-dir shared.pri files
+# **/shared.pri
+
+# Ignore IDE's config files
+**/*.pro.user*
+
+# Ignore IDE's autosave files
+**/*.autosave*
+
+# Ignore makefiles
+**/Makefile
