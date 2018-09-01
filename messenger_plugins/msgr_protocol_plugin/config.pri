@@ -2,9 +2,9 @@
 
 include(../../shared.pri)
 
-CONFIG(debug,   debug|release) : DESTDIR = ../$${MESSENGER_BUILD_DIR}/debug
+CONFIG(debug,   debug|release) : DESTDIR = ../$${MESSENGER_BUILD_DIR}/debug/plugins
 
-CONFIG(release, debug|release) : DESTDIR = ../$${MESSENGER_BUILD_DIR}/release
+CONFIG(release, debug|release) : DESTDIR = ../$${MESSENGER_BUILD_DIR}/release/plugins
 
 # Configure library
 
