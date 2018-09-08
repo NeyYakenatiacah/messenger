@@ -1,5 +1,5 @@
 #TODO include qml modules?
-QT += widgets network
+QT += widgets
 
 TARGET = messenger_application
 

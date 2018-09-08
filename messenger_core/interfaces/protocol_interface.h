@@ -22,7 +22,8 @@ public:
 
     enum class State
     {
-        NotAuthorized = 1
+        NotAuthorized = 1,
+        Ready = 2
     };
 
     explicit ProtocolInterface(QObject *parent = nullptr);
@@ -30,6 +31,7 @@ public:
 
     virtual QString id() const = 0;
     virtual QString name() const = 0;
+    virtual QString description() const = 0;
 
     virtual IOMode ioModes() const = 0;
 

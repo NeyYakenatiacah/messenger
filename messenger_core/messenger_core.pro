@@ -18,7 +18,8 @@ HEADERS += \
     plugin-loader/abstract_plugin_dispatcher.h \
     plugin-loader/core_plugin_dispatcher.h \
     interfaces/account_interface.h \
-    interfaces/protocol_interface.h
+    interfaces/protocol_interface.h \
+    types/user_data.h
 
 
 SOURCES += \
@@ -27,4 +28,5 @@ SOURCES += \
     plugin-loader/abstract_plugin_dispatcher.cpp \
     plugin-loader/core_plugin_dispatcher.cpp \
     interfaces/account_interface.cpp \
-    interfaces/protocol_interface.cpp
+    interfaces/protocol_interface.cpp \
+    types/user_data.cpp
