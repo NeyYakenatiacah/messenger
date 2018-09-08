@@ -1,4 +1,4 @@
-#include "inner_protocol.h"
+#include "inner_protocol_plugin.h"
 
 QStringList InnerProtocol::objectIds() const
 {

@@ -21,8 +21,10 @@ TEMPLATE = lib
 include(config.pri)
 
 SOURCES += \
-    inner_protocol.cpp
+    inner_protocol_plugin.cpp \
+    websocket_protocol.cpp
     
 HEADERS += \
-    inner_protocol.h
+    inner_protocol_plugin.h \
+    websocket_protocol.h
  
