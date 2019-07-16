@@ -5,7 +5,7 @@ TARGET = messenger_application
 
 TEMPLATE = app
 
-CONFIG += c++11
+CONFIG += c++17
 
 include(config.pri)
 

@@ -7,11 +7,12 @@ TEMPLATE = lib
 
 DEFINES += MESSENGER_CORE_LIBRARY
 
-CONFIG += shared c++11
+CONFIG += shared c++17
 
 include(config.pri)
 
 HEADERS += \
+    debug-utils/logger/logger.hpp \
     messenger_core_export.h \
     interfaces/core_factory_interface.h \
     plugin-loader/core_plugin.h \
