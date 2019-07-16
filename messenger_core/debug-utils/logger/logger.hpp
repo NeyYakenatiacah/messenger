@@ -6,9 +6,20 @@
 template<class LoggerImpl>
 class Logger: public LoggerImpl
 {
-    void operator()(std::string_view msg)
+    Logger()
+        : LoggerImpl()
     {
 
+    }
+
+    virtual ~Logger()
+    {
+
+    }
+
+    void operator()(std::string_view msg)
+    {
+        LoggerImpl::write(msg);
     }
 };
 

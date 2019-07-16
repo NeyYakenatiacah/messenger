@@ -12,6 +12,8 @@ CONFIG += shared c++17
 include(config.pri)
 
 HEADERS += \
+    debug-utils/logger/constants.hpp \
+    debug-utils/logger/file_logger.hpp \
     debug-utils/logger/logger.hpp \
     messenger_core_export.h \
     interfaces/core_factory_interface.h \
@@ -21,6 +23,7 @@ HEADERS += \
 
 
 SOURCES += \
+    debug-utils/logger/file_logger.cpp \
     interfaces/core_factory_interface.cpp \
     plugin-loader/core_plugin.cpp \
     plugin-loader/abstract_plugin_dispatcher.cpp \
