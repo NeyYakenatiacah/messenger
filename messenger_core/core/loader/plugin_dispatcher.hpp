@@ -1,5 +1,5 @@
-#ifndef CORE_PLUGIN_DISPATCHER_H
-#define CORE_PLUGIN_DISPATCHER_H
+#ifndef PLUGIN_DISPATCHER_HPP
+#define PLUGIN_DISPATCHER_HPP
 
 #include <QPluginLoader>
 
@@ -47,4 +47,4 @@ private:
 
 };
 }
-#endif // CORE_PLUGIN_DISPATCHER_H
+#endif // PLUGIN_DISPATCHER_HPP

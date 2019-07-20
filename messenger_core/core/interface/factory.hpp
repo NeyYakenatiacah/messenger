@@ -1,11 +1,10 @@
-#ifndef PROTOCOL_FACTORY_INTERFACE_H
-#define PROTOCOL_FACTORY_INTERFACE_H
+#ifndef FACTORY_HPP
+#define FACTORY_HPP
 
 #include <QtPlugin>
 
 #include <messenger_core_export.h>
 
-//constexpr char CORE_FACTORY_IID[] = "Messenger.Core.Interface.Factory";
 #define CORE_FACTORY_IID "Messenger.Core.Interface.Factory"
 
 namespace core
@@ -23,4 +22,4 @@ public:
 
 Q_DECLARE_INTERFACE(core::Factory, CORE_FACTORY_IID)
 
-#endif // PROTOCOL_FACTORY_INTERFACE_H
+#endif // FACTORY_HPP

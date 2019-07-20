@@ -1,5 +1,5 @@
-#ifndef CORE_PLUGIN_H
-#define CORE_PLUGIN_H
+#ifndef PLUGIN_HPP
+#define PLUGIN_HPP
 
 #include <QPluginLoader>
 
@@ -41,4 +41,4 @@ private:
 
 };
 }
-#endif // CORE_PLUGIN_H
+#endif // PLUGIN_HPP

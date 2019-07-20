@@ -1,5 +1,5 @@
-#ifndef PROTOCOL_INTERFACE_H
-#define PROTOCOL_INTERFACE_H
+#ifndef PROTOCOL_HPP
+#define PROTOCOL_HPP
 
 #include <QObject>
 
@@ -61,4 +61,4 @@ private:
 };
 }
 
-#endif // PROTOCOL_INTERFACE_H
+#endif // PROTOCOL_HPP

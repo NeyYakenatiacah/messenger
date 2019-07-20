@@ -1,5 +1,5 @@
-#ifndef ACCOUNT_INTERFACE_H
-#define ACCOUNT_INTERFACE_H
+#ifndef ACCOUNT_HPP
+#define ACCOUNT_HPP
 
 #include <QObject>
 
@@ -17,4 +17,4 @@ public slots:
 };
 }
 
-#endif // ACCOUNT_INTERFACE_H
+#endif // ACCOUNT_HPP
