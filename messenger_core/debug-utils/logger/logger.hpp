@@ -3,14 +3,23 @@
 
 #include <string_view>
 
-template<class LoggerImpl>
-class Logger: public LoggerImpl
+#include <messenger_core_export.h>
+
+namespace core
 {
+
+template<class LoggerImpl>
+class MESSENGER_CORE_EXPORT Logger: public LoggerImpl
+{
+private:
+
+public:
     Logger()
         : LoggerImpl()
     {
 
     }
+
 
     virtual ~Logger()
     {
@@ -22,5 +31,6 @@ class Logger: public LoggerImpl
         LoggerImpl::write(msg);
     }
 };
+}
 
 #endif // LOGGER_HPP

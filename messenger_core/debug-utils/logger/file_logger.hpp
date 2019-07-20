@@ -3,12 +3,17 @@
 
 #include <string_view>
 
+namespace core
+{
 class FileLogger
 {
 public:
-    FileLogger();
 
     void write(std::string_view msg);
-};
 
+protected:
+    FileLogger();
+    ~FileLogger();
+};
+}
 #endif // FILE_LOGGER_H
