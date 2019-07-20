@@ -1,7 +1,7 @@
 #TODO include qml modules?
 QT += widgets
 
-TARGET = messenger_application
+TARGET = msgr_application
 
 TEMPLATE = app
 

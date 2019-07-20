@@ -1,13 +1,14 @@
 #include <QApplication>
-#include <QDebug>
 
-#include <plugin-loader/core_plugin_dispatcher.h>
+#include <core/loader/plugin_dispatcher.hpp>
+
+#include <QDir>
+#include <QDebug>
 
 int main(int argc, char * argv[])
 {
     QApplication a(argc, argv);
-
-    CorePluginDispatcher dispatcher();
-
+    core::PluginDispatcher dispatcher{};
+    qDebug() << QDir::currentPath();
     return a.exec();
 }

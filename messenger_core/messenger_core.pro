@@ -12,21 +12,21 @@ CONFIG += shared c++17
 include(config.pri)
 
 HEADERS += \
+    core/loader/abstract_plugin_dispatcher.hpp \
+    core/loader/plugin.hpp \
+    core/loader/plugin_dispatcher.hpp \
     messenger_core_export.h \
-    interfaces/core_factory_interface.h \
-    plugin-loader/core_plugin.h \
-    plugin-loader/abstract_plugin_dispatcher.h \
-    plugin-loader/core_plugin_dispatcher.h \
-    interfaces/account_interface.h \
-    interfaces/protocol_interface.h \
-    types/user_data.h
+    core/interface/account.hpp \
+    core/interface/factory.hpp \
+    core/interface/protocol.hpp \
+    core/types/user_data.h
 
 
 SOURCES += \
-    interfaces/core_factory_interface.cpp \
-    plugin-loader/core_plugin.cpp \
-    plugin-loader/abstract_plugin_dispatcher.cpp \
-    plugin-loader/core_plugin_dispatcher.cpp \
-    interfaces/account_interface.cpp \
-    interfaces/protocol_interface.cpp \
-    types/user_data.cpp
+    src/interface/account.cpp \
+    src/interface/factory.cpp \
+    src/interface/protocol.cpp \
+    src/loader/plugin.cpp \
+    src/loader/abstract_plugin_dispatcher.cpp \
+    src/loader/plugin_dispatcher.cpp \
+    src/types/user_data.cpp

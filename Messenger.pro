@@ -3,8 +3,8 @@ TEMPLATE = subdirs
 
 SUBDIRS += \
 	messenger_core \
-	messenger_application \
-	messenger_plugins \
+        messenger_application \
+        messenger_plugins \
 
 # Sub directories
 
@@ -19,4 +19,3 @@ messenger_plugins.subdir = messenger_plugins
 messenger_application.depends = messenger_core
 
 messenger_plugins.depends = messenger_core
-
