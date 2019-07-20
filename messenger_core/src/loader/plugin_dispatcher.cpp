@@ -1,7 +1,5 @@
 #include <core/loader/plugin_dispatcher.hpp>
 
-#include <QDebug>
-
 namespace core
 {
 PluginDispatcher::PluginDispatcher(QObject *parent) : AbstractPluginDispatcher(parent)
@@ -100,8 +98,6 @@ bool PluginDispatcher::load(const QString & file)
         {
             m_plugins << plugin;
 
-            qDebug() << "Plugin " << file << " loaded!";
-
             return true;
         }
         else
@@ -128,8 +124,6 @@ bool PluginDispatcher::unload(const QString & file)
                     m_plugins.removeOne(plugin);
 
                     delete plugin;
-
-                    qDebug() << "Plugin " << file << " deleted!";
 
                     return true;
                 }

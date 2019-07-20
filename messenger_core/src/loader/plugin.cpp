@@ -19,9 +19,7 @@ Plugin::~Plugin()
 
 bool Plugin::load(const QString& filename)
 {
-    bool unloaded = unload();
-
-    if(unloaded)
+    if(!m_loader.isLoaded())
     {
         m_loader.setFileName(filename);
 
@@ -45,8 +43,7 @@ bool Plugin::load(const QString& filename)
 
 bool Plugin::unload()
 {
-    return true;
-    //return m_loader.unload();
+    return m_loader.unload();
 }
 
 bool Plugin::contains(const QString & id) const
